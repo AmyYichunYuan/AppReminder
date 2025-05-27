@@ -1,0 +1,15 @@
+﻿<Window x:Class="ShowMessageApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lovely Reminder" Height="200" Width="400"
+        WindowStartupLocation="CenterScreen">
+	<Grid Background="LightSkyBlue">
+        <TextBlock Text="{Binding Message}"
+                   FontSize="36"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   TextWrapping="Wrap" />
+	</Grid>
+</Window>
