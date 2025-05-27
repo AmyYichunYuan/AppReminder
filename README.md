@@ -1,13 +1,9 @@
 # AppReminder
 
-
-
-
-
-
-Way to test WMI
+**Way to test WMI**
 
 Open a command prompt as Administrator and run:
+```bash
     sc query winmgmt
     (If it's not running, start it with) net start winmgmt 
 Test WMI with WBEMTest:
