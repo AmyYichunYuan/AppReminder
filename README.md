@@ -6,8 +6,14 @@ Open a command prompt as Administrator and run:
 ```bash
 sc query winmgmt
 ```
-    (If it's not running, start it with) net start winmgmt 
+
+If it's not running, start it with
+```bash
+net start winmgmt
+```
+
 Test WMI with WBEMTest:
+
     Press Win + R, type wbemtest, and press Enter.
     Click Connect, use root\cimv2, and click Connect.
     Click Query, and try a simple query like: SELECT * FROM Win32_Process
