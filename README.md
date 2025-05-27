@@ -16,7 +16,7 @@ sc create AppWatcherService binPath= "C:\full\path\to\AppWatcherService\AppWatch
 ```
 
 5. Update appsettings.json. Ensure The path to ShowMessageApp.exe is correct. Update nlog.config if needed.
-6.Start the service:
+6. Start the service:
 ```bash
 sc start AppWatcherService
 ```
