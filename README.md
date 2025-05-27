@@ -20,9 +20,9 @@ Test WMI with WBEMTest:
 
 To test event-based WMI queries, you can use PowerShell (Admin) instead:
 ```bash
-    Register-WmiEvent -Query "SELECT * FROM Win32_ProcessStartTrace" -Action {
-        if ($Event.SourceEventArgs.NewEvent.ProcessName -eq "EXCEL.EXE") {
-            Write-Host "Excel started!"
-        }
+Register-WmiEvent -Query "SELECT * FROM Win32_ProcessStartTrace" -Action {
+    if ($Event.SourceEventArgs.NewEvent.ProcessName -eq "EXCEL.EXE") {
+        Write-Host "Excel started!"
     }
+}
 ```
