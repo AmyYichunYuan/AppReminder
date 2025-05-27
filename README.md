@@ -4,7 +4,8 @@
 
 Open a command prompt as Administrator and run:
 ```bash
-    sc query winmgmt```
+sc query winmgmt
+```
     (If it's not running, start it with) net start winmgmt 
 Test WMI with WBEMTest:
     Press Win + R, type wbemtest, and press Enter.
